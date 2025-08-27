@@ -8,7 +8,7 @@ The CLAPE framework has been applied to [DNA-binding](https://github.com/YAndrew
 
 The protein language model used in this study is [ESM-2](https://github.com/facebookresearch/esm).
 
-[ICFinder webserver:]()
+Click here: [ICFinder webserver]()
 
 ## Environment
 ```
