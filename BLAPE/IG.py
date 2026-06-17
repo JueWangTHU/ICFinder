@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+# @Time         : 2025/8/24 18:00
+# @Author       : Jue Wang
+# @Description  : Interpretability analysis based on integral gradient method
+
 import sys
 import os
 
