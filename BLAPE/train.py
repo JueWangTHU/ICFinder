@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+# @Time         : 2025/8/24 18:00
+# @Author       : Jue Wang
+# @Description  : Training
+
 import os
 import pickle
 import numpy as np
@@ -147,7 +152,6 @@ def compute_metrics(y_true, y_pred, y_probs):
 
 # log
 def setup_logger():
-    # 获取当前时间
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     log_dir = './train_log/'
 
@@ -156,13 +160,12 @@ def setup_logger():
 
     log_filename = os.path.join(log_dir, f'{current_time}.log')
 
-    # 配置日志记录
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(message)s',
         handlers=[
-            logging.StreamHandler(),  # 输出到控制台
-            logging.FileHandler(log_filename)  # 输出到文件
+            logging.StreamHandler(),
+            logging.FileHandler(log_filename)
         ]
     )
 
@@ -170,10 +173,8 @@ def setup_logger():
 
 
 def main():
-    # 设置日志记录
     logger = setup_logger()
-    
-    # 超参数设置
+
     params = {
         "train": '../Embedding/esm_train_ICIdentification.pkl',
         "valid": '../Embedding/esm_valid_ICIdentification.pkl',
