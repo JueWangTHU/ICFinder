@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+# @Time         : 2025/8/24 18:00
+# @Author       : Jue Wang
+# @Description  : Inference
+
 import pickle
 import torch
 import esm
